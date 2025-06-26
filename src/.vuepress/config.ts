@@ -4,10 +4,10 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   base: "/",
-
+  dest: 'src/.vuepress/dist',
   lang: "zh-CN",
-  title: "博客演示",
-  description: "vuepress-theme-hope 的博客演示",
+  title: "yu-knowledge",
+  description: "yu-knowledge",
 
   theme,
 

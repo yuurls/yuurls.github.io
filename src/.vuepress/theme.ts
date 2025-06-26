@@ -11,14 +11,25 @@ export default hopeTheme({
     url: "https://mister-hope.com",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/logo.png",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
   docsDir: "src",
 
   // 导航栏
-  navbar,
+  navbar: [
+    {
+      text: "主页",
+      link: "/index.html",
+      icon: "lightbulb",
+      // 仅在 `/zh/guide/` 激活
+      activeMatch: "^/$",
+    },
+    { text: "配置", link: "/category/index.html", icon: "config" },
+    { text: "常见问题",link: "/README.md",icon: "circle-question", activeMatch: "^/blog",},
+	{ text: "IOT",link: "/iot/README.md",icon: "circle-question", activeMatch: "^/iot",},
+  ],
 
   // 侧边栏
   sidebar,
